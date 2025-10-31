@@ -8,11 +8,17 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "postman:run": "newman run postman/collections/backend-assignment.postman_collection.json -e postman/environments/backend-assignment.example.postman_environment.json -r cli,html"
   },
   "dependencies": {
     "dotenv": "^17.2.3",
     "express": "^5.1.0",
     "mongodb": "^6.20.0"
+  }
+  ,
+  "devDependencies": {
+    "newman": "^5.1.0",
+    "newman-reporter-html": "^5.1.0"
   }
 }
