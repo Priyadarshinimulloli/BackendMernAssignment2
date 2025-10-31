@@ -1,6 +1,32 @@
-# SynergiaBooking
+# Synergia Event Booking API
 
-Minimal notes to run the server and test endpoints.
+## Description
+A Node.js & Express REST API for event booking with MongoDB integration.  
+Allows users to perform CRUD operations on events and bookings, with search and filter functionality.
+
+---
+
+## Features
+- **Events**
+  - Create, Read, Update, Delete events
+  - Fetch events by ID or date
+- **Bookings**
+  - Create new bookings
+  - Get all bookings or booking by ID
+  - Update booking by event title or email
+  - Cancel booking
+- Fully RESTful API
+- MongoDB integration using `mongodb` client
+
+---
+
+## Tech Stack
+- Node.js
+- Express.js
+- MongoDB
+- dotenv for environment variables
+
+---
 
 ## Quick start
 
@@ -37,7 +63,3 @@ Add screenshots here (leave space for SS):
 
 ---
 
-Keep it simple. Add more docs as needed.
----
-
-If you want this README moved to the repo root or adjusted for both projects, tell me where and how you'd like it structured.
